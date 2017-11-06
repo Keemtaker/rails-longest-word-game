@@ -1,0 +1,19 @@
+
+<% if @result[:score] == 0 %>
+<h2>Sorry buddy, you lost</h2>
+<% else %>
+<h2><h1 style="color: #d32292">Congrats! You won!</h1>
+</h2>
+<% end %>
+
+
+<h3>Score: <%= @result[:score] %></h3>
+<h3>Time: <%= @result[:time] %></h3>
+<h3>Message: <%= @result[:message] %></h3>
+
+
+
+<button>
+  <%= link_to 'Play Again', game_path %>
+</button>
+
